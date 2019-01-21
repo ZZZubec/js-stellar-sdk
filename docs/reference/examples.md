@@ -79,7 +79,7 @@ server.loadAccount(sourcePublicKey)
 
     // Submit the transaction to the Horizon server. The Horizon server will then
     // submit the transaction into the network for us.
-    server.submitTransaction(transaction)
+    server.submitTransaction(transactionResult)
       .then(function(transactionResult) {
         console.log(JSON.stringify(transactionResult, null, 2));
         console.log('\nSuccess! View the transaction at: ');
